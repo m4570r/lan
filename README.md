@@ -6,7 +6,7 @@ modulo lan, corresponde al modulo encargado de obtener la direccion ip local <br
 <code>git clone https://github.com/m4570r/lan.git</code>
 <br><br>
 # MODULO en la Polybar
-<code>
+```
 [module/lan_ico] <br>
 type = custom/text /n
 content = ï – /n
@@ -18,4 +18,4 @@ exec = cd ~/.config/polybar/scripts/  && ./lan /n
 [module/lan_sep] /n
 type = custom/text /n
 content = | /n
-</code>
+```
