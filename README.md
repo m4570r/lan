@@ -11,11 +11,12 @@ git clone https://github.com/m4570r/lan.git
 
 ```
 <code>cd lan</code><br>
-<code>sudo chmod +x lan</code><br>
-<code>sudo chmod +x lan.sh</code><br>
-<code>sudo chmod +x status</code><br>
-<code>sudo chown root status</code><br>
-para probar el comando puedes usar esta linea <br>
+
+```
+sudo chmod +x lan && sudo chmod +x lan.sh && sudo chmod +x status && chown root status
+```
+
+<br>para probar el comando puedes usar esta linea <br>
 <code>./status &</code><br>
 <hr>
 pero si tu intencion es dejar permanentemente el modulo activado debes lanzarlo al inicio con un crontab de la siguiente forma.<br>
