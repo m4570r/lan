@@ -19,18 +19,18 @@ if ping -c1 google.com &>/dev/null; then
 	echo tengo internet> /dev/null 2>&1	
 	proceso2=$(ps -e | grep n.sh | awk '{print $4}') > /dev/null 2>&1;
 		if $proceso2> /dev/null 2>&1;	then
-			cd /home/miguel/.config/polybar/scripts/ && bash -c "./lan.sh &"
-			cd /home/miguel/.config/polybar/scripts/ && bash -c "./wan.sh &"
-			cd /home/miguel/.config/polybar/scripts/ && bash -c "./vpn.sh &"
+			cd ~/.config/polybar/scripts/lan && bash -c "./lan.sh &"
+			#cd ~/.config/polybar/scripts/wan && bash -c "./wan.sh &"
+			#cd ~/.config/polybar/scripts/vpn && bash -c "./vpn.sh &"
 		fi	
 #./vpn.sh
 else 
 	echo no tengo internet> /dev/null 2>&1
 	monitor
 	killall *n.sh> /dev/null 2>&1
-	echo	"Desconectado">/home/miguel/.config/polybar/scripts/lan.view
-	echo	"Desconectado">/home/miguel/.config/polybar/scripts/wan.view
-	echo	"Desconectado">/home/miguel/.config/polybar/scripts/vpn.view
+	echo	"Desconectado">~/.config/polybar/scripts/lan/lan.view
+	#echo	"Desconectado">~/.config/polybar/scripts/wan/wan.view
+	#echo	"Desconectado">~/.config/polybar/scripts/vpn/vpn.view
 fi
 #monitor
 sleep 3s
