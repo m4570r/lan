@@ -1,5 +1,7 @@
-# lan
-modulo lan, corresponde al modulo encargado de obtener la direccion ip local <br>
+# Instalacion
+Este modulo corresponde al modulo encargado de obtener la direccion ip local
+<br>
+Para instalar el modulo lan debes seguir los siguientes pasos <br>
 <code>cd ~/.config/polybar/</code><br>
 <code>mkdir scripts</code><br>
 <code>cd scripts</code><br>
