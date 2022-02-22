@@ -7,15 +7,15 @@ modulo lan, corresponde al modulo encargado de obtener la direccion ip local <br
 <br><br>
 # MODULO en la Polybar
 <code>
-[module/lan_ico]
-type = custom/text
-content = ï –
-[module/lan]
-type = custom/script
-interval = 1
-;exec = ~/.config/polybar/scripts/lan 
-exec = cd ~/.config/polybar/scripts/  && ./lan
-[module/lan_sep]
-type = custom/text
-content = |
+[module/lan_ico] /n
+type = custom/text /n
+content = ï – /n
+[module/lan] /n
+type = custom/script /n
+interval = 1 /n
+;exec = ~/.config/polybar/scripts/lan /n 
+exec = cd ~/.config/polybar/scripts/  && ./lan /n
+[module/lan_sep] /n
+type = custom/text /n
+content = | /n
 </code>
