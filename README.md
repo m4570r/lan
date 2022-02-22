@@ -23,7 +23,7 @@ pero si tu intencion es dejar permanentemente el modulo activado debes lanzarlo 
 <code>crontab -e</code><br>
 
 ```
-@reboot ~/.config/polybar/scripts/lan/status & <br>
+@reboot ~/.config/polybar/scripts/lan/status & 
 
 ```
 <hr>
