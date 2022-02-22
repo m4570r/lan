@@ -18,10 +18,12 @@ git clone https://github.com/m4570r/lan.git<br>
 para probar el comando puedes usar esta linea <br>
 <code>./status &</code><br>
 <hr>
-pero si tu intencion es dejar permanentemente el modulo activado debes lanzarlo al inicio con un crontab de la siguiente forma.
+pero si tu intencion es dejar permanentemente el modulo activado debes lanzarlo al inicio con un crontab de la siguiente forma.<br>
 <code>crontab -e</code><br>
+
 ```
-@reboot ~/.config/polybar/scripts/lan/status &
+@reboot ~/.config/polybar/scripts/lan/status & <br>
+
 ```
 <hr>
 <code>cd ..</code><br>
