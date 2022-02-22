@@ -9,7 +9,8 @@ Para instalar el modulo lan debes seguir los siguientes pasos <br>
 <code>cd lan</code><br>
 <code>sudo chmod +x lan</code><br>
 <code>sudo chmod +x lan.sh</code><br>
-<code>./lan.sh &</code><br>
+<code>sudo chmod +x status</code><br>
+<code>./status &</code><br>
 <code>cd ..</code><br>
 <code>sudo nano current.ini</code><br>
 <br><br>
