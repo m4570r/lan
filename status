@@ -1,0 +1,37 @@
+#!/bin/bash
+monitor(){
+proceso=$(ps -e | grep openvpn | awk '{print $4}') #> /dev/null 2>&1)
+IFACE=$(/usr/sbin/ifconfig | grep tun0 | awk '{print $1}' | tr -d ':')
+if [ "$proceso" ]
+then
+      	#echo hay openvpn> /dev/null 2>&1;
+	      bash -c "sudo killall openvpn"
+        bash -c "sudo ip link delete tun0"
+else
+   	    echo no hay openvpn> /dev/null 2>&1
+	
+fi
+}
+for (( ; ; ))
+do
+clear
+if ping -c1 google.com &>/dev/null; then
+	echo tengo internet> /dev/null 2>&1	
+	proceso2=$(ps -e | grep n.sh | awk '{print $4}') > /dev/null 2>&1;
+		if $proceso2> /dev/null 2>&1;	then
+			cd /home/miguel/.config/polybar/scripts/ && bash -c "./lan.sh &"
+			cd /home/miguel/.config/polybar/scripts/ && bash -c "./wan.sh &"
+			cd /home/miguel/.config/polybar/scripts/ && bash -c "./vpn.sh &"
+		fi	
+#./vpn.sh
+else 
+	echo no tengo internet> /dev/null 2>&1
+	monitor
+	killall *n.sh> /dev/null 2>&1
+	echo	"Desconectado">/home/miguel/.config/polybar/scripts/lan.view
+	echo	"Desconectado">/home/miguel/.config/polybar/scripts/wan.view
+	echo	"Desconectado">/home/miguel/.config/polybar/scripts/vpn.view
+fi
+#monitor
+sleep 3s
+done
