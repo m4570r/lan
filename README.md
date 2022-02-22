@@ -1,4 +1,4 @@
-# Instalacin
+# Install
 Este modulo corresponde al modulo encargado de obtener la direccion ip local
 <br>
 Para instalar el modulo lan debes seguir los siguientes pasos <br>
