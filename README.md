@@ -7,7 +7,7 @@ modulo lan, corresponde al modulo encargado de obtener la direccion ip local <br
 <br><br>
 # MODULO en la Polybar
 <code>
-[module/lan_ico] /n
+[module/lan_ico] <br>
 type = custom/text /n
 content = ï – /n
 [module/lan] /n
