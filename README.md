@@ -23,7 +23,7 @@ background = ${color.trans}
 ;foreground = ${color.blue}
 foreground = #00ff15
 ;modules-center = web sep2 files sep2 edit sep2 apps
-modules-center = lan_ico lan lan_sep wan_ico wan wan_sep vpn_ico vpn vpn_sep
+modules-center = lan_ico lan lan_sep
 ```
 ```
 [module/lan_ico] 
