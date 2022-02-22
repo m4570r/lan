@@ -7,7 +7,7 @@ Para instalar el modulo lan debes seguir los siguientes pasos <br>
 <code>cd scripts</code><br>
 
 ```
-git clone https://github.com/m4570r/lan.git<br>
+git clone https://github.com/m4570r/lan.git
 
 ```
 <code>cd lan</code><br>
