@@ -6,6 +6,9 @@ Para instalar el modulo lan debes seguir los siguientes pasos <br>
 <code>mkdir scripts</code><br>
 <code>cd scripts</code><br>
 <code>git clone https://github.com/m4570r/lan.git</code><br>
+<code>cd lan</code><br>
+<code>sudo chmod +x lan</code><br>
+<code>sudo chmod +x lan.sh</code><br>
 <code>cd ..</code><br>
 <code>sudo nano current.ini</code><br>
 <br><br>
@@ -37,7 +40,7 @@ content = ï –
 type = custom/script 
 interval = 1 
 ;exec = ~/.config/polybar/scripts/lan 
-exec = cd ~/.config/polybar/scripts/  && ./lan 
+exec = cd ~/.config/polybar/scripts/lan  && ./lan 
 [module/lan_sep] 
 type = custom/text 
 content = | 
