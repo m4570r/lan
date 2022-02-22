@@ -5,12 +5,25 @@ Para instalar el modulo lan debes seguir los siguientes pasos <br>
 <code>cd ~/.config/polybar/</code><br>
 <code>mkdir scripts</code><br>
 <code>cd scripts</code><br>
-<code>git clone https://github.com/m4570r/lan.git</code><br>
+
+```
+git clone https://github.com/m4570r/lan.git<br>
+
+```
 <code>cd lan</code><br>
 <code>sudo chmod +x lan</code><br>
 <code>sudo chmod +x lan.sh</code><br>
 <code>sudo chmod +x status</code><br>
+<code>sudo chown root status</code><br>
+para probar el comando puedes usar esta linea <br>
 <code>./status &</code><br>
+<hr>
+pero si tu intencion es dejar permanentemente el modulo activado debes lanzarlo al inicio con un crontab de la siguiente forma.
+<code>crontab -e</code><br>
+```
+@reboot ~/.config/polybar/scripts/lan/status &
+```
+<hr>
 <code>cd ..</code><br>
 <code>sudo nano current.ini</code><br>
 <br><br>
