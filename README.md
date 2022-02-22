@@ -13,7 +13,7 @@ git clone https://github.com/m4570r/lan.git
 <code>cd lan</code><br>
 
 ```
-sudo chmod +x lan && sudo chmod +x lan.sh && sudo chmod +x status && chown root status
+sudo chmod +x lan && sudo chmod +x lan.sh && sudo chmod +x status && sudo chown root status
 ```
 
 <br>para probar el comando puedes usar esta linea <br>
