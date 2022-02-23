@@ -18,7 +18,11 @@ cd lan
 ```
 
 ```
-chmod +x lan && chmod +x lan.sh && chmod +x status && chown root status && chmod +x wan && chmod +x wan.sh
+chmod +x lan && chmod +x lan.sh && chmod +x status && chown root status && chmod +x wan && chmod +x wan.sh && chmod +x vpn && chmod +x vpn.sh
+```
+
+```
+nano vpn.sh
 ```
 
 ```
@@ -43,6 +47,10 @@ cp lan /home/usuario/.config/polybar/scripts/lan/lan
 
 ```
 cp wan /home/usuario/.config/polybar/scripts/lan/wan 
+```
+
+```
+cp vpn /home/usuario/.config/polybar/scripts/lan/vpn 
 ```
 
 <hr>
@@ -77,6 +85,14 @@ killall status
 
 ```
 killall lan.sh
+```
+
+```
+killall wan.sh
+```
+
+```
+killall vpn.sh
 ```
 
 ```
