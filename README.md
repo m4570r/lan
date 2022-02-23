@@ -18,7 +18,11 @@ cd lan
 ```
 
 ```
-chmod +x lan && chmod +x lan.sh && chmod +x status && chown root status
+chmod +x lan && chmod +x lan.sh && chmod +x status && chown root status && chmod +x wan && chmod +x wan.sh
+```
+
+```
+nano wan.sh
 ```
 
 ```
