@@ -2,6 +2,7 @@
 Este modulo corresponde al modulo encargado de obtener la direccion ip local
 <br>
 Para instalar el modulo lan debes seguir los siguientes pasos <br>
+pero antes usa el comando <code>whoami</code> con la finalidad de tener claro cual es tu usuario, asi de esta forma podras reemplazar cada vez que veaz la palabra <usuario> por el usuairo correspondiente a tu maquina.<br>
 <code>sudo su</code><br>
 <code>cd ~/</code><br>
 ```
