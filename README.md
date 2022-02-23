@@ -14,6 +14,9 @@ git clone https://github.com/m4570r/lan.git
 ```
 sudo chmod +x lan && sudo chmod +x lan.sh && sudo chmod +x status && sudo chown root status
 ```
+Antes de continuar vamos a editar lan.sh y status para reemplazar la palabra usuario por el nombre correspondiente a su cuneta
+  <code>nano lan.sh</code><br>
+  <code>nano status</code><br>
 <code>mkdir /home/usuario/.config/polybar/scripts/lan </code><br>
 <code>cp lan /home/usuario/.config/polybar/scripts/lan/lan </code><br>
 <br>para probar el comando puedes usar esta linea <br>
