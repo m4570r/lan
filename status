@@ -1,4 +1,5 @@
 #!/bin/bash
+usuario=
 monitor(){
 proceso=$(ps -e | grep openvpn | awk '{print $4}') #> /dev/null 2>&1)
 IFACE=$(/usr/sbin/ifconfig | grep tun0 | awk '{print $1}' | tr -d ':')
@@ -29,7 +30,7 @@ else
 	monitor
 	killall *n.sh> /dev/null 2>&1
 	#Aqui debes cambiar el nombre de <usuario> por tu usuario para ello debes usar el comando whoami para saber cual es tu usuario
-	cd /home/usuario/.config/polybar/scripts/lan
+	cd /home/$usuario/.config/polybar/scripts/lan
 	echo	"Desconectado">lan.view
 	#echo	"Desconectado">~/lan/wan.view
 	#echo	"Desconectado">~/lan/vpn.view
