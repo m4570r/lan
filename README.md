@@ -12,7 +12,7 @@ git clone https://github.com/m4570r/lan.git
 <code>cd lan</code><br>
 
 ```
-sudo chmod +x lan && sudo chmod +x lan.sh && sudo chmod +x status && sudo chown root status
+chmod +x lan && chmod +x lan.sh && chmod +x status && chown root status
 ```
 Antes de continuar vamos a editar lan.sh y status para reemplazar la palabra usuario por el nombre correspondiente a su cuneta<br>
   <code>nano lan.sh</code><br>
