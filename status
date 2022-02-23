@@ -28,7 +28,8 @@ else
 	echo no tengo internet> /dev/null 2>&1
 	monitor
 	killall *n.sh> /dev/null 2>&1
-	echo	"Desconectado">~/lan/lan.view
+	cd /home/usuario/.config/polybar/scripts/lan
+	echo	"Desconectado">lan.view
 	#echo	"Desconectado">~/lan/wan.view
 	#echo	"Desconectado">~/lan/vpn.view
 fi
