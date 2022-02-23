@@ -57,3 +57,37 @@ crontab -e
 sudo nano /home/usuario/.config/polybar/current.ini
 ```
 
+<h2>Desinstalacion Manual</h2><br>
+
+```
+sudo su
+```
+
+```
+killall status
+```
+
+```
+killall lan.sh
+```
+
+```
+rm -r /home/usuario/.config/polybar/scripts/lan
+```
+
+```
+cd ~/
+```
+
+```
+rm -r lan
+```
+
+```
+crontab -r
+```
+
+```
+crontab -l
+```
+
