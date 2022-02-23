@@ -1,4 +1,5 @@
-# Manual Install
+<h1>Modulo de IP</h1><br>
+<h2>Instalacion Manual</h2><br>
 
 ```
 sudo su
@@ -37,7 +38,7 @@ cp lan /home/usuario/.config/polybar/scripts/lan/lan
 ```
 
 <hr>
-<h2>Progamar el inicio</h2>
+<h2>Progamar el inicio automatico del modulo</h2><br>
 
 
 ```
@@ -50,6 +51,7 @@ crontab -e
 ```
 
 <hr>
+<h2>Activa el modulo en la polybar</h2><br>
 
 ```
 sudo nano /home/usuario/.config/polybar/current.ini
