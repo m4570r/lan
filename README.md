@@ -83,13 +83,15 @@ cd ~/
 rm -r lan
 ```
 
+<hr>
+<h2>Elimina el inicio automatico</h2><br>
+
 ```
 crontab -r
 ```
+<hr>
 
-```
-crontab -l
-```
+<h2>Desactiva el modulo en la polybar</h2>
 
 ```
 sudo nano /home/usuario/.config/polybar/current.ini
