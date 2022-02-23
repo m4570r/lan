@@ -13,7 +13,7 @@ git clone https://github.com/m4570r/lan.git
 ```
 sudo chmod +x lan && sudo chmod +x lan.sh && sudo chmod +x status && sudo chown root status
 ```
-<code>cp </code><br>
+<code>cp lan /home/usuario/.config/polybar/scripts/lan/lan </code><br>
 <br>para probar el comando puedes usar esta linea <br>
 <code>./status &</code><br>
 <hr>
