@@ -2,16 +2,19 @@
 <br>
 <code>sudo su</code><br>
 <code>cd ~/</code><br>
+
 ```
 git clone https://github.com/m4570r/lan.git
 
 ```
+
 <code>cd lan</code><br>
+
 
 ```
 chmod +x lan && chmod +x lan.sh && chmod +x status && chown root status
 ```
-<br>
+
 <code>nano lan.sh</code><br>
 <code>nano status</code><br>
 <code>mkdir /home/usuario/.config/polybar/scripts/lan </code><br>
@@ -19,14 +22,17 @@ chmod +x lan && chmod +x lan.sh && chmod +x status && chown root status
 <hr>
 <code>crontab -e</code><br>
 
+
 ```
 @reboot /root/lan/status & 
 
 ```
+
 <hr>
 <br>
 <code>sudo nano /home/usuario/.config/polybar/current.ini</code><br>
 <br><br>
+
 # MODULO en la Polybar
 
 ```
