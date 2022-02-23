@@ -91,3 +91,6 @@ crontab -r
 crontab -l
 ```
 
+```
+sudo nano /home/usuario/.config/polybar/current.ini
+```
