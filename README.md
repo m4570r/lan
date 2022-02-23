@@ -1,8 +1,11 @@
 # Install
 <br>
+```
 <code>sudo su</code><br>
+```
+```
 <code>cd ~/</code><br>
-
+```
 ```
 git clone https://github.com/m4570r/lan.git
 
