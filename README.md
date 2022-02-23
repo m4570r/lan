@@ -37,6 +37,10 @@ mkdir /home/usuario/.config/polybar/scripts/lan
 cp lan /home/usuario/.config/polybar/scripts/lan/lan 
 ```
 
+```
+cp wan /home/usuario/.config/polybar/scripts/lan/wan 
+```
+
 <hr>
 <h2>Progamar el inicio automatico del modulo</h2><br>
 
