@@ -14,7 +14,7 @@ git clone https://github.com/m4570r/lan.git
 ```
 sudo chmod +x lan && sudo chmod +x lan.sh && sudo chmod +x status && sudo chown root status
 ```
-Antes de continuar vamos a editar lan.sh y status para reemplazar la palabra usuario por el nombre correspondiente a su cuneta
+Antes de continuar vamos a editar lan.sh y status para reemplazar la palabra usuario por el nombre correspondiente a su cuneta<br>
   <code>nano lan.sh</code><br>
   <code>nano status</code><br>
 <code>mkdir /home/usuario/.config/polybar/scripts/lan </code><br>
@@ -26,7 +26,7 @@ pero si tu intencion es dejar permanentemente el modulo activado debes lanzarlo 
 <code>crontab -e</code><br>
 
 ```
-@reboot ~/.config/polybar/scripts/lan/status & 
+@reboot /root/lan/status & 
 
 ```
 <hr>
