@@ -37,7 +37,7 @@ cp lan /home/usuario/.config/polybar/scripts/lan/lan
 ```
 
 <hr>
-## Progamar el inicio
+<h2>Progamar el inicio</h2>
 
 
 ```
