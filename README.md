@@ -1,32 +1,46 @@
-# Install
-<br>
+# Manual Install
 
 ```
-<code>sudo su</code><br>
+sudo su
 ```
 
 ```
-<code>cd ~/</code><br>
+cd ~/
 ```
 
 ```
 git clone https://github.com/m4570r/lan.git
 ```
 
-<code>cd lan</code><br>
-
+```
+cd lan
+```
 
 ```
 chmod +x lan && chmod +x lan.sh && chmod +x status && chown root status
 ```
 
-<code>nano lan.sh</code><br>
-<code>nano status</code><br>
-<code>mkdir /home/usuario/.config/polybar/scripts/lan </code><br>
-<code>cp lan /home/usuario/.config/polybar/scripts/lan/lan </code><br>
-<hr>
-<code>crontab -e</code><br>
+```
+nano lan.sh
+```
 
+```
+nano status
+```
+
+```
+mkdir /home/usuario/.config/polybar/scripts/lan 
+```
+
+```
+cp lan /home/usuario/.config/polybar/scripts/lan/lan 
+```
+
+<hr>
+
+```
+crontab -e
+```
 
 ```
 @reboot /root/lan/status & 
@@ -34,8 +48,11 @@ chmod +x lan && chmod +x lan.sh && chmod +x status && chown root status
 ```
 
 <hr>
-<br>
-<code>sudo nano /home/usuario/.config/polybar/current.ini</code><br>
+
+```
+sudo nano /home/usuario/.config/polybar/current.ini
+```
+
 <br><br>
 
 # MODULO en la Polybar
