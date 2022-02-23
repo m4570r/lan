@@ -37,6 +37,8 @@ cp lan /home/usuario/.config/polybar/scripts/lan/lan
 ```
 
 <hr>
+## Progamar el inicio
+
 
 ```
 crontab -e
