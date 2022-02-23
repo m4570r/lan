@@ -1,8 +1,5 @@
 # Install
-Este modulo corresponde al modulo encargado de obtener la direccion ip local
 <br>
-Para instalar el modulo lan debes seguir los siguientes pasos <br>
-pero antes usa el comando <code>whoami</code> con la finalidad de tener claro cual es tu usuario, asi de esta forma podras reemplazar cada vez que veaz la palabra <usuario> por el usuairo correspondiente a tu maquina.<br>
 <code>sudo su</code><br>
 <code>cd ~/</code><br>
 ```
@@ -14,15 +11,12 @@ git clone https://github.com/m4570r/lan.git
 ```
 chmod +x lan && chmod +x lan.sh && chmod +x status && chown root status
 ```
-Antes de continuar vamos a editar lan.sh y status para reemplazar la palabra usuario por el nombre correspondiente a su cuneta<br>
-  <code>nano lan.sh</code><br>
-  <code>nano status</code><br>
+<br>
+<code>nano lan.sh</code><br>
+<code>nano status</code><br>
 <code>mkdir /home/usuario/.config/polybar/scripts/lan </code><br>
 <code>cp lan /home/usuario/.config/polybar/scripts/lan/lan </code><br>
-<br>para probar el comando puedes usar esta linea <br>
-<code>./status &</code><br>
 <hr>
-pero si tu intencion es dejar permanentemente el modulo activado debes lanzarlo al inicio con un crontab de la siguiente forma.<br>
 <code>crontab -e</code><br>
 
 ```
@@ -30,11 +24,8 @@ pero si tu intencion es dejar permanentemente el modulo activado debes lanzarlo 
 
 ```
 <hr>
-para activar el modulo debes editar el archivo correspondiente de la polybar<br>
-usando la siguiente ruta<br>
+<br>
 <code>sudo nano /home/usuario/.config/polybar/current.ini</code><br>
-Antes de reiniciar el equipo debes asegurarte de cambiar en todas partes donde diga usuario por tu usuario, para saber cual es tu usuario usa el siguiente comando <br>
-<code>whoami</code><br>
 <br><br>
 # MODULO en la Polybar
 
