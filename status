@@ -28,6 +28,7 @@ else
 	echo no tengo internet> /dev/null 2>&1
 	monitor
 	killall *n.sh> /dev/null 2>&1
+	#Aqui debes cambiar el nombre de <usuario> por tu usuario para ello debes usar el comando whoami para saber cual es tu usuario
 	cd /home/usuario/.config/polybar/scripts/lan
 	echo	"Desconectado">lan.view
 	#echo	"Desconectado">~/lan/wan.view
