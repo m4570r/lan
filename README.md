@@ -26,8 +26,9 @@ pero si tu intencion es dejar permanentemente el modulo activado debes lanzarlo 
 
 ```
 <hr>
-<code>cd ..</code><br>
-<code>sudo nano current.ini</code><br>
+Antes de reiniciar el equipo debes asegurarte de cambiar en todas partes donde diga usuario por tu usuario, para saber cual es tu usuario usa el siguiente comando <br>
+<code>whoami</code><br>
+<code>sudo nano /home/usuario/.config/polybar/current.ini</code><br>
 <br><br>
 # MODULO en la Polybar
 
