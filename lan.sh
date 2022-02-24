@@ -1,6 +1,6 @@
 #!/bin/bash
 users>~/lan/usuarios
-while IFS= read -r line; do usuario=$line; done < ~/lan/usuarios
+while IFS= read -r line; do usuario=$line; done<~/lan/usuarios
 for (( ; ; ))
 do
 #if ping -c1 google.com &>/dev/null; then  
