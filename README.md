@@ -71,8 +71,19 @@ git clone https://github.com/m4570r/lan.git
 ```
 
 ```
-cd lan && chmod +x install && ./install
+cd lan 
 ```
+
+
+```
+ chmod +x install 
+```
+
+
+```
+./install
+```
+
 
 
 <hr>
