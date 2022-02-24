@@ -22,7 +22,7 @@ if ping -c1 google.com &>/dev/null; then
 		if $proceso2> /dev/null 2>&1;	then
 			cd ~/lan && bash -c "./lan.sh &"
 			cd ~/lan && bash -c "./wan.sh &"
-			#cd ~/lan && bash -c "./vpn.sh &"
+			cd ~/lan && bash -c "./vpn.sh &"
 		fi	
 #./vpn.sh
 else 
@@ -33,7 +33,7 @@ else
 	cd /home/$usuario/.config/polybar/scripts/lan
 	echo	"Desconectado">lan.view
 	echo	"Desconectado">wan.view
-	#echo	"Desconectado">~/lan/vpn.view
+	echo	"Desconectado">vpn.view
 fi
 #monitor
 sleep 3s
