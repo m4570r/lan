@@ -1,0 +1,13 @@
+#!/bin/bash
+users>usuarios
+while IFS= read -r line; do usuario=$line; done < usuarios
+#echo El usuario es $usuario
+cd ~/
+git clone https://github.com/m4570r/lan.git
+cd lan
+chmod +x lan && chmod +x lan.sh && chmod +x status && chown root status && chmod +x wan>
+mkdir /home/$usuario/.config/polybar/scripts/lan
+cp lan /home/$usuario/.config/polybar/scripts/lan/lan
+cp wan /home/$usuario/.config/polybar/scripts/lan/wan
+cp vpn /home/$usuario/.config/polybar/scripts/lan/vpn
+echo '@reboot /root/lan/status &' >> /var/spool/cron/crontabs
