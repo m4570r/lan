@@ -10,8 +10,8 @@ do
     			ip -o addr show up primary scope global | while read -r num dev fam addr rest; do echo ${addr%/*}; done>/home/$usuario/.config/polybar/scripts/lan/lan.view
 		else
 			#Aqui debes hacer lo mismo que la vez anterior debes cambiar tu usuario por tu usuario
-    			cd /home/$usuario/.config/polybar/scripts/lan
-			echo "Desconectado">lan.view
+    			#cd /home/$usuario/.config/polybar/scripts/lan
+			echo "Desconectado">/home/$usuario/.config/polybar/scripts/lan/lan.view
 		fi
 #else 
 #	echo 'Desconectado'>~/lan/lan.view
