@@ -1,6 +1,6 @@
 <h1>Modulo de IP</h1><br>
 <p>
-El "Modulo de IP" consta de 7 scripts
+El "Modulo de IP" consta de 7 archivos denominados scripts, la manera de ejecutar estos archivos es a traves de <code>crontab</code> el cual debe ser ejecutado bajo usuario con privilegios.
   <ul>
   <li>status</li>
   <li>lan</li>
