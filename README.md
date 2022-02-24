@@ -1,4 +1,16 @@
 <h1>Modulo de IP</h1><br>
+<p>
+El "Modulo de IP" consta de 7 scripts que se ejecutan para obtener las direcciones IP (local-publica-VPN)
+  <ul>
+  <li>status</li>
+  <li>lan</li>
+  <li>wan</li>
+  <li>vpn</li>
+  <li>lan.sh</li>
+  <li>wan.sh</li>
+  <li>vpn.sh</li>
+  </ul>
+</p>
 <h2>Instalacion Manual</h2><br>
 
 ```
