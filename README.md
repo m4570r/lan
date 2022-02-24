@@ -1,6 +1,6 @@
 <h1>Modulo de IP</h1><br>
 <p>
-El "Modulo de IP" consta de 7 archivos denominados scripts, la manera de ejecutar estos archivos es a traves de <code>crontab</code> el cual debe ser ejecutado bajo usuario con privilegios.
+El "Modulo de IP" consta de 7 archivos denominados scripts, la manera de operar estos archivos es a traves de <code>crontab</code> tras el inicio de sesion, este debe ejecutar el script <code>status</code>, (podemos comprobar si se esta ejecutando con el comando <code>ps -e | grep status</code>), este escript esta encargado de realizar 2 comprobaciones, la primera comprobacion es saber si hay o no hay Internet y la segunda comprobacion verifica si se esta ejecutando o no  Openvpn.
   <ul>
   <li>status</li>
   <li>lan</li>
