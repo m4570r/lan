@@ -70,6 +70,14 @@ cd ~/
 git clone https://github.com/m4570r/lan.git
 ```
 
+```
+cd lan
+```
+
+```
+./install
+```
+
 <hr>
 <h2>Progamar el inicio automatico del modulo</h2><br>
 
