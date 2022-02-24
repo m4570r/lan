@@ -71,12 +71,9 @@ git clone https://github.com/m4570r/lan.git
 ```
 
 ```
-cd lan
+cd lan && chmod +x install && ./install
 ```
 
-```
-./install
-```
 
 <hr>
 <h2>Progamar el inicio automatico del modulo</h2><br>
