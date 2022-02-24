@@ -1,5 +1,6 @@
 #!/bin/bash
-usuario=
+users>usuarios
+while IFS= read -r line; do usuario=$line; done < usuarios
 for (( ; ; ))
 do
 IFACE=$(/usr/sbin/ifconfig | grep tun0 | awk '{print $1}' | tr -d ':')
