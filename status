@@ -31,10 +31,10 @@ else
 	monitor
 	killall *n.sh> /dev/null 2>&1
 	#Aqui debes cambiar el nombre de <usuario> por tu usuario para ello debes usar el comando whoami para saber cual es tu usuario
-	cd /home/$usuario/.config/polybar/scripts/lan
-	echo	"Desconectado">lan.view
-	echo	"Desconectado">wan.view
-	echo	"Desconectado">vpn.view
+	#cd /home/$usuario/.config/polybar/scripts/lan
+	echo	"Desconectado">/home/$usuario/.config/polybar/scripts/lan/lan.view
+	echo	"Desconectado">/home/$usuario/.config/polybar/scripts/lan/wan.view
+	echo	"Desconectado">/home/$usuario/.config/polybar/scripts/lan/vpn.view
 fi
 #monitor
 sleep 3s
