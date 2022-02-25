@@ -1,6 +1,5 @@
 #!/bin/bash
-users>~/lan/usuarios
-while IFS= read -r line; do usuario=$line; done < ~/lan/usuarios
+users>usuarios ; while IFS= read -r line; do usuario=$line; done < usuarios
 monitor(){
 proceso=$(ps -e | grep openvpn | awk '{print $4}') #> /dev/null 2>&1)
 IFACE=$(/usr/sbin/ifconfig | grep tun0 | awk '{print $1}' | tr -d ':')
@@ -25,17 +24,14 @@ if ping -c1 google.com &>/dev/null; then
 			cd ~/lan && bash -c "./wan.sh &"
 			cd ~/lan && bash -c "./vpn.sh &"
 		fi	
-#./vpn.sh
 else 
 	echo no tengo internet> /dev/null 2>&1
 	monitor
 	killall *n.sh> /dev/null 2>&1
-	#Aqui debes cambiar el nombre de <usuario> por tu usuario para ello debes usar el comando whoami para saber cual es tu usuario
-	#cd /home/$usuario/.config/polybar/scripts/lan
-	echo	"Desconectado">/home/$usuario/.config/polybar/scripts/lan/lan.view
-	echo	"Desconectado">/home/$usuario/.config/polybar/scripts/lan/wan.view
-	echo	"Desconectado">/home/$usuario/.config/polybar/scripts/lan/vpn.view
+	cd /home/$usuario/.config/polybar/scripts/lan
+	echo	"Desconectado">lan.view
+	echo	"Desconectado">wan.view
+	echo	"Desconectado">vpn.view
 fi
-#monitor
 sleep 3s
 done
