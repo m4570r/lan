@@ -1,0 +1,5 @@
+#!/bin/bash
+while IFS= read -r line; do usuario=$line; done < usuarios
+killall status lan.sh wan.sh vpn.sh
+rm -r /home/$usuario/.config/polybar/scripts/lan
+rm -r ~/lan
