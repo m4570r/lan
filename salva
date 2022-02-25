@@ -1,0 +1,7 @@
+# move a floating window
+super + ctrl + {Left,Down,Up,Right}
+        bspc node -v {-20 0,0 20,0 -20,20 0}
+
+# Custom move/resize
+super + alt + {Left,Down,Up,Right}
+    /home/miguel/.config/bspwm/scripts/bspwm_resize {west,south,north,east}
