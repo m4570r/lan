@@ -17,3 +17,7 @@ mkdir /home/$usuario/.config/polybar/scripts/lan
 cp lan /home/$usuario/.config/polybar/scripts/lan/lan
 cp wan /home/$usuario/.config/polybar/scripts/lan/wan
 cp vpn /home/$usuario/.config/polybar/scripts/lan/vpn
+cd /home/$usuario/.config/polybar/scripts/lan/ && echo ' '>lan.view
+cd /home/$usuario/.config/polybar/scripts/lan/ && echo ' '>wan.view
+cd /home/$usuario/.config/polybar/scripts/lan/ && echo ' '>vpn.view
+
