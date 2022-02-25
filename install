@@ -5,7 +5,14 @@ while IFS= read -r line; do usuario=$line; done < ~/lan/usuarios
 #cd ~/
 #git clone https://github.com/m4570r/lan.git
 cd ~/lan
-chmod +x lan && chmod +x lan.sh && chmod +x status && chown root status && chmod +x wan && chmod +x wan.sh && chmod +x vpn && chmod +x vpn.sh
+chmod +x lan 
+chmod +x lan.sh 
+chmod +x status 
+chown root status
+chmod +x wan 
+chmod +x wan.sh 
+chmod +x vpn 
+chmod +x vpn.sh
 mkdir /home/$usuario/.config/polybar/scripts/lan
 cp lan /home/$usuario/.config/polybar/scripts/lan/lan
 cp wan /home/$usuario/.config/polybar/scripts/lan/wan
