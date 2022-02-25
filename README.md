@@ -95,7 +95,7 @@ crontab -e
 ```
 
 ```
-@reboot /root/lan/status & 
+@reboot cd ~/lan && ./status &
 
 ```
 
