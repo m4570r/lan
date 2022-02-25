@@ -1,9 +1,6 @@
 #!/bin/bash
 users>~/lan/usuarios
 while IFS= read -r line; do usuario=$line; done < ~/lan/usuarios
-cd /home/$usuario/.config/polybar/scripts/lan/ && echo ''>lan.view
-cd /home/$usuario/.config/polybar/scripts/lan/ && echo ''>wan.view
-cd /home/$usuario/.config/polybar/scripts/lan/ && echo ''>vpn.view
 monitor(){
 proceso=$(ps -e | grep openvpn | awk '{print $4}') #> /dev/null 2>&1)
 IFACE=$(/usr/sbin/ifconfig | grep tun0 | awk '{print $1}' | tr -d ':')
